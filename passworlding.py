@@ -3,7 +3,7 @@ import random
 import string
 from datetime import datetime
 
-# ---------- APP CONFIG ----------
+#  APP CONFIG
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
@@ -12,7 +12,7 @@ app.geometry("520x520")
 app.title("PASSWORLDING")
 app.resizable(False, False)
 
-# ---------- FUNCTIONS ----------
+# FUNCTIONS
 
 def password_strength(password):
     score = 0
@@ -65,7 +65,7 @@ def save_password():
 def change_theme(mode):
     ctk.set_appearance_mode(mode)
 
-# ---------- UI ----------
+# UI
 
 title = ctk.CTkLabel(
     app,
@@ -148,3 +148,4 @@ ctk.CTkOptionMenu(
 ).pack(pady=15)
 
 app.mainloop()
+
